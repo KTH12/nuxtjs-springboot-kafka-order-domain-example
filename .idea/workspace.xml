@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5560aa87-83e1-4439-be1f-5cf49c64bba5" name="Default Changelist" comment="- commit">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/architecture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/orderlist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/ordersubmit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/shoplist.png" afterDir="false" />
+    <list default="true" id="5560aa87-83e1-4439-be1f-5cf49c64bba5" name="Default Changelist" comment="- READEME 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +104,7 @@
       <workItem from="1612132203419" duration="1550000" />
       <workItem from="1612681367881" duration="1009000" />
       <workItem from="1612682389143" duration="986000" />
-      <workItem from="1612699734589" duration="2212000" />
+      <workItem from="1612699734589" duration="2960000" />
     </task>
     <task id="LOCAL-00001" summary="- git ignore commit">
       <created>1612681674115</created>
@@ -167,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612699992834</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- READEME 추가">
+      <created>1612702064907</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612702064907</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +237,7 @@
     <MESSAGE value="- kafka cluster docker-compose.yml add" />
     <MESSAGE value="- spring boot api server push" />
     <MESSAGE value="- commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="- commit" />
+    <MESSAGE value="- READEME 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="- READEME 추가" />
   </component>
 </project>

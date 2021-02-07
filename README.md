@@ -1,4 +1,16 @@
+# 프로젝트 설명
+## #카프카, Spring boot 를 활용하여 주문 접수 및 주문 생성 로직 구현
 
+# kafka docker start
+```
+$ cd kafka
+$ docker-compose -f kafka-cluster.yml up
+```
+# server
+```
+$ cd server
+# spring boot app start
+```
 
 # Front end 
 ```
