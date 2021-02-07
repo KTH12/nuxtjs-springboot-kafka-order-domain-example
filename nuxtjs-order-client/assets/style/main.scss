@@ -1,0 +1,20 @@
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  background: #2F2423;
+  &.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-top-5 {
+  margin-top: 1rem;
+}

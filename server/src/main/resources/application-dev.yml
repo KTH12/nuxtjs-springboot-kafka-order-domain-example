@@ -1,0 +1,49 @@
+server:
+  port: 8089
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        acks: all
+        retries: 10
+        retry.backoff.ms: 1000
+        admin:
+          properties:
+            bootstrap.servers: localhost:9092
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: order-topic-consumer-group
+  # 출처 : https://blog.jiniworld.me/34
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: "${YOUR DB URL}"
+    username: "${db id}"
+    password: "${db pw}"
+    hikari:
+      auto-commit: false # 프로젝트 시작시 테이블 CREATE
+      connection-test-query: SELECT 1
+      minimum-idle: 10
+      maximum-pool-size: 50
+      transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+      pool-name: pool-jiniworld
+    oracleucp:
+      database-name: "${DBNAME}"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        format_sql: true
+    #앱 시작시 @Entity로 정의한 테이블의 create 문 실행
+    generate-ddl: false
+    #템플릿 view 화면의 렌더링이 끝날 때 까지 Lazy fetch 가 가능하도록 해주는 속성
+    #default는 true로, 매우 유용한 기능이지만 기능적 면에서 false로 설정해주는 것이 좋습니다.
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: com.orderserver.config.PrefixPhysicalNamingStrategy
