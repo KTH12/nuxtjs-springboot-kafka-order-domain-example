@@ -19,6 +19,9 @@ $ yarn install # node_modules install
 $ yarn dev # client server start
 ```
 
+# server architecture
+![Alt text](./source/architecture.jpg)
+
 ## Front Client 페이지 캡처
 ### 메인 화면("/")
 ![Alt text](./source/main.png)
@@ -30,5 +33,3 @@ $ yarn dev # client server start
 ![Alt text](./source/orderlist.png)
 
 
-# server architecture
-![Alt text](./source/architecture.jpg)
